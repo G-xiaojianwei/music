@@ -1,0 +1,26 @@
+#pic{ width: 100%; position: absolute; top:50px; bottom:65px; /*background:url(/images/detailsBg.jpg);*/ background-size: cover; color:white; overflow-y: hidden; display: flex; }
+#pic .big{width: 240px;height: 240px;background: url(/images/1.png); background-size: cover; border-radius: 50%;margin:auto;overflow: hidden;display: flex;}
+#pic .big .small{animation:circleMove  10s linear infinite;width: 240px;height: 240px;background: url(/images/3.png); background-size: cover; border-radius: 50%;margin:auto;overflow: hidden;display: flex;}
+#pic .big .small .circle{box-sizing: border-box; width: 150px;height: 150px;border-radius: 50%;margin:auto;overflow: hidden;}
+#pic .big .small .circle img{width: 100%;height: 100%;}
+#pic .lyric{
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right:0;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	border:1px solid #fff;
+	margin:10px;
+}
+@keyframes circleMove{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
